@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'inter';
+    src: url('../font/Inter-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'inter';
+    src: url('../font/Inter-Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'inter';
+    src: url('../font/Inter-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'pt';
+    src: url('../font/PTSans-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'pt';
+    src: url('../font/PTSans-Regular.ttf');
+    font-weight: 400;
+}

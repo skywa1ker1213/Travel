@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <!-- HEADER STARTS -->
+    <header>
+        <!-- NAV STARTS -->
+        <nav>
+            <div class="container">
+                <div class="nav__content">
+
+                    <a href="index.html">
+                        <img src="img/travel__logo.png" alt="">
+                    </a>
+
+                    <ul class="nav__list">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="tours.html" class="active">Туры</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+
+                    <div class="nav__info">
+
+                        <div class="dropdown">
+                            <button onclick="toggleDropdown()" class="dropbtn" id="selectedOption">RU <i
+                                    class="fa-solid fa-caret-down"></i></button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="#" onclick="selectOption(this)">RU <i class="fa-solid fa-caret-down"></i></a>
+                                <a href="#" onclick="selectOption(this)">UZ <i class="fa-solid fa-caret-down"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="burger">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </nav>
+        <!-- NAV END -->
+    </header>
+    <!-- HEADER END -->
+
+    <!-- MAIN STARTS -->
+    <main>
+        <!-- TOURS HEAD STARTS -->
+        <section class="tours__head">
+            <div class="container">
+                <div class="tours__head-content">
+                    <h5>Прекрасные туры ждет вас!</h5>
+
+                    <span class="scroll-btn">
+                        <a href="#all-tours">
+                            <span class="mouse">
+                                <span>
+                                </span>
+                            </span>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <section class="tours__all" id="all-tours">
+            <div class="container">
+                <h5>Пункты назначения для вас</h5>
+
+                <div class="tours__all-content">
+
+                    <!-- TOUR 1 -->
+                    <div class="tour__block">
+                        <img class="tour__img" src="img/tour__img.png" alt="">
+    
+                        <div class="tour__info">
+                            <h4>Поездка на Мальдивы</h4>
+    
+                            <h3>250$</h3>
+                        </div>
+    
+                        <p>Отпуск вашей мечты: Мальдивы в Лучших Традициях Роскоши</p>
+    
+                        <a href="book.html">
+                            <button>Подробно</button>
+                        </a>
+                    </div>
+
+                    <!-- TOUR 2 -->
+                    <div class="tour__block">
+                        <img class="tour__img" src="img/tour__img.png" alt="">
+    
+                        <div class="tour__info">
+                            <h4>Поездка на Мальдивы</h4>
+    
+                            <h3>250$</h3>
+                        </div>
+    
+                        <p>Отпуск вашей мечты: Мальдивы в Лучших Традициях Роскоши</p>
+    
+                        <a href="#">
+                            <button>Подробно</button>
+                        </a>
+                    </div>
+
+                    <!-- TOUR 3 -->
+                    <div class="tour__block">
+                        <img class="tour__img" src="img/tour__img.png" alt="">
+    
+                        <div class="tour__info">
+                            <h4>Поездка на Мальдивы</h4>
+    
+                            <h3>250$</h3>
+                        </div>
+    
+                        <p>Отпуск вашей мечты: Мальдивы в Лучших Традициях Роскоши</p>
+    
+                        <a href="#">
+                            <button>Подробно</button>
+                        </a>
+                    </div>
+
+                    <!-- TOUR 4 -->
+                    <div class="tour__block">
+                        <img class="tour__img" src="img/tour__img.png" alt="">
+    
+                        <div class="tour__info">
+                            <h4>Поездка на Мальдивы</h4>
+    
+                            <h3>250$</h3>
+                        </div>
+    
+                        <p>Отпуск вашей мечты: Мальдивы в Лучших Традициях Роскоши</p>
+    
+                        <a href="#">
+                            <button>Подробно</button>
+                        </a>
+                    </div>
+
+                    <!-- TOUR 5 -->
+                    <div class="tour__block">
+                        <img class="tour__img" src="img/tour__img.png" alt="">
+    
+                        <div class="tour__info">
+                            <h4>Поездка на Мальдивы</h4>
+    
+                            <h3>250$</h3>
+                        </div>
+    
+                        <p>Отпуск вашей мечты: Мальдивы в Лучших Традициях Роскоши</p>
+    
+                        <a href="#">
+                            <button>Подробно</button>
+                        </a>
+                    </div>
+
+                    <!-- TOUR 6 -->
+                    <div class="tour__block">
+                        <img class="tour__img" src="img/tour__img.png" alt="">
+    
+                        <div class="tour__info">
+                            <h4>Поездка на Мальдивы</h4>
+    
+                            <h3>250$</h3>
+                        </div>
+    
+                        <p>Отпуск вашей мечты: Мальдивы в Лучших Традициях Роскоши</p>
+    
+                        <a href="#">
+                            <button>Подробно</button>
+                        </a>
+                    </div>
+
+                    <!-- TOUR 7 -->
+                    <div class="tour__block">
+                        <img class="tour__img" src="img/tour__img.png" alt="">
+    
+                        <div class="tour__info">
+                            <h4>Поездка на Мальдивы</h4>
+    
+                            <h3>250$</h3>
+                        </div>
+    
+                        <p>Отпуск вашей мечты: Мальдивы в Лучших Традициях Роскоши</p>
+    
+                        <a href="#">
+                            <button>Подробно</button>
+                        </a>
+                    </div>
+
+                    <!-- TOUR 8 -->
+                    <div class="tour__block">
+                        <img class="tour__img" src="img/tour__img.png" alt="">
+    
+                        <div class="tour__info">
+                            <h4>Поездка на Мальдивы</h4>
+    
+                            <h3>250$</h3>
+                        </div>
+    
+                        <p>Отпуск вашей мечты: Мальдивы в Лучших Традициях Роскоши</p>
+    
+                        <a href="#">
+                            <button>Подробно</button>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- TOURS HEAD END-->
+
+        <!-- BLOG STARTS -->
+        <section class="blog">
+            <div class="container">
+                <h5>Последние новости</h5>
+
+                <h2>
+                    Читайте последние блоги
+                </h2>
+
+                <div class="blog__content">
+                    <div class="blog__block">
+                        <img class="blog__img" src="img/blog__img.png" alt="">
+
+                        <div class="blog__info">
+                            <h3>
+                                Путешествия лучше всего
+                                измеряются новыми друзьями
+                            </h3>
+
+                            <p>
+                                Lorem ipsum dolor sit amet, consect adipiscing elit. Ut elit tellus, luctus nec
+                                ullamcorper mattis pul leo.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="blog__block">
+                        <img class="blog__img" src="img/blog__img.png" alt="">
+
+                        <div class="blog__info">
+                            <h3>
+                                Путешествия лучше всего
+                                измеряются новыми друзьями
+                            </h3>
+
+                            <p>
+                                Lorem ipsum dolor sit amet, consect adipiscing elit. Ut elit tellus, luctus nec
+                                ullamcorper mattis pul leo.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="blog__block">
+                        <img class="blog__img" src="img/blog__img.png" alt="">
+
+                        <div class="blog__info">
+                            <h3>
+                                Путешествия лучше всего
+                                измеряются новыми друзьями
+                            </h3>
+
+                            <p>
+                                Lorem ipsum dolor sit amet, consect adipiscing elit. Ut elit tellus, luctus nec
+                                ullamcorper mattis pul leo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- BLOG END -->
+
+    </main>
+    <!-- MAIN END -->
+
+       <!-- FOOTER STARTS -->
+       <footer>
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__info">
+                    <a href="index.html"><img class="footer__logo" src="img/footer__logo.png" alt=""></a>
+
+                    <div class="footer__info-icons">
+                        <a href="#">
+                            <i class="fa-brands fa-telegram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__link">
+
+                    <h3>
+                        Быстрые ссылки
+                    </h3>
+
+                    <ul class="footer__list">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="tours.html">Туры</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__contact">
+                    <h3>Связаться</h3>
+
+                    <a href="#">
+                        <li><i class="fa-solid fa-phone"></i> +998(90)-108-40-40</li>
+                    </a>
+
+                    <a href="#">
+                        <li><i class="fa-solid fa-envelope"></i> mastertours@gmail.com</li>
+                    </a>
+
+                    <a href="#">
+                        <li><i class="fa-solid fa-location-dot"></i> 10043, Тошкент шахри, Чилонзор тумани, Бунёдкор
+                            кучаси, № 1.</li>
+                    </a>
+                </div>
+
+                <div class="footer__review">
+                    <form>
+                        <h3>
+                            Если вам нравится наше
+                            услуги оставьте отзыв
+                        </h3>
+
+                        <input type="text" placeholder="Ф.И.О" required>
+                        <input type="text" placeholder="Номер телефона" required>
+                        <input type="text" placeholder="Сообшения">
+
+                        <a href="#">
+                            <button>Отправить</button>
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+
+
+
+    <!-- MAIN CUSTOM JS -->
+    <script src="js/main.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swiper/swiper.js"></script>
+
+    <!-- FONT AWESOME -->
+    <script src="libs/FontAwesome.js"></script>
+
+
+</body>
+
+</html>

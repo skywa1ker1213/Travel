@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <!-- HEADER STARTS -->
+    <header>
+        <!-- NAV STARTS -->
+        <nav>
+            <div class="container">
+                <div class="nav__content">
+
+                    <a href="index.html">
+                        <img src="img/travel__logo.png" alt="">
+                    </a>
+
+                    <ul class="nav__list">
+                        <li><a href="index.html" class="active">Главная</a></li>
+                        <li><a href="tours.html">Туры</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+
+                    <div class="nav__info">
+
+                        <div class="dropdown">
+                            <button onclick="toggleDropdown()" class="dropbtn" id="selectedOption">RU <i
+                                    class="fa-solid fa-caret-down"></i></button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="#" onclick="selectOption(this)">RU <i class="fa-solid fa-caret-down"></i></a>
+                                <a href="#" onclick="selectOption(this)">UZ <i class="fa-solid fa-caret-down"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="burger">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+        <!-- NAV END -->
+    </header>
+    <!-- HEADER END -->
+
+    <!-- MAIN STARTS -->
+    <main>
+        <!-- BOOK STATS -->
+        <section class="book">
+            <div class="container">
+                <div class="book__content">
+
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="book__block">
+                                    <img class="book__bg" src="img/book__bg.png" alt="">
+                                    <div class="book__info">
+                                        <h4>
+                                            Mastertours: Ваш Мастерский Путь к Путешествиям.
+                                        </h4>
+
+                                        <h2>
+                                            Мальдивы Ждут Вас
+                                        </h2>
+
+                                        <h5>
+                                            Откройте Дверь в Мир Мальдив: Ваш Путеводитель в Роскошь
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="book__block">
+                                    <img class="book__bg" src="img/book__bg.png" alt="">
+                                    <div class="book__info">
+                                        <h4>
+                                            Mastertours: Ваш Мастерский Путь к Путешествиям.
+                                        </h4>
+
+                                        <h2>
+                                            Тайланд Ждет Вас
+                                        </h2>
+
+                                        <h5>
+                                            Откройте Дверь в Мир Тайланд: Ваш Путеводитель в Роскошь
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="book__block">
+                                    <img class="book__bg" src="img/book__bg2.png" alt="">
+                                    <div class="book__info">
+                                        <h4>
+                                            Mastertours: Ваш Мастерский Путь к Путешествиям.
+                                        </h4>
+
+                                        <h2>
+                                            Мекка Ждет Вас
+                                        </h2>
+
+                                        <h5>
+                                            Откройте Дверь в Мир Мекки: Ваш Путеводитель в Роскошь
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="book__block">
+                                    <img class="book__bg" src="img/book__bg2.png" alt="">
+                                    <div class="book__info">
+                                        <h4>
+                                            Mastertours: Ваш Мастерский Путь к Путешествиям.
+                                        </h4>
+
+                                        <h2>
+                                            Хадж Ждет Вас
+                                        </h2>
+
+                                        <h5>
+                                            Отправьтесь на Хадж: Уникальный Тур в Священную Мекку
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                    <div class="book__registrate">
+                        <form>
+                            <h2>
+                                Бронируйте
+                            </h2>
+
+                            <h2>
+                                Сейчас
+                            </h2>
+
+                            <input type="text" placeholder="Ф.И.О" required>
+                            <input type="text" placeholder="Номер Телефона" required>
+
+                            <select required>
+                                <option disabled selected>Выберите Тариф</option>
+                                <option>B</option>
+                                <option>A</option>
+                            </select>
+
+                                <button>Отправить</button>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- BOOK END -->
+
+        <!-- TOURS STARTS -->
+        <section class="tour">
+            <div class="container">
+                <h5>
+                    Рекомендуемые пакеты
+                </h5>
+
+                <h2>
+                    Лучшие туры
+                </h2>
+
+                <p>
+                    Опыт Вашей Жизни: Уникальные Турпакеты для Незабываемых Путешествий
+                </p>
+
+                <div class="tour__content">
+
+                    <!-- Swiper -->
+                    <div class="swiper tourSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="tour__block">
+                                    <img class="tour__img" src="img/tour__img.png" alt="">
+
+                                    <div class="tour__info">
+                                        <h4>Поездка на Мальдивы</h4>
+
+                                        <h3>250$</h3>
+                                    </div>
+
+                                    <p>Отпуск вашей мечты: Мальдивы в Лучших Традициях Роскоши</p>
+
+                                    <a href="#">
+                                        <button>Подробно</button>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="tour__block">
+                                    <img class="tour__img" src="img/tour__img.png" alt="">
+
+                                    <div class="tour__info">
+                                        <h4>Поездка на Мальдивы</h4>
+
+                                        <h3>250$</h3>
+                                    </div>
+
+                                    <p>Отпуск вашей мечты: Мальдивы в Лучших Традициях Роскоши</p>
+
+                                    <a href="#">
+                                        <button>Подробно</button>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="tour__block">
+                                    <img class="tour__img" src="img/tour__img.png" alt="">
+
+                                    <div class="tour__info">
+                                        <h4>Поездка на Мальдивы</h4>
+
+                                        <h3>250$</h3>
+                                    </div>
+
+                                    <p>Отпуск вашей мечты: Мальдивы в Лучших Традициях Роскоши</p>
+
+                                    <a href="#">
+                                        <button>Подробно</button>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="tour__block">
+                                    <img class="tour__img" src="img/tour__img.png" alt="">
+
+                                    <div class="tour__info">
+                                        <h4>Поездка на Мальдивы</h4>
+
+                                        <h3>250$</h3>
+                                    </div>
+
+                                    <p>Отпуск вашей мечты: Мальдивы в Лучших Традициях Роскоши</p>
+
+                                    <a href="#">
+                                        <button>Подробно</button>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="tour__block">
+                                    <img class="tour__img" src="img/tour__img.png" alt="">
+
+                                    <div class="tour__info">
+                                        <h4>Поездка на Мальдивы</h4>
+
+                                        <h3>250$</h3>
+                                    </div>
+
+                                    <p>Отпуск вашей мечты: Мальдивы в Лучших Традициях Роскоши</p>
+
+                                    <a href="#">
+                                        <button>Подробно</button>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="tour__block">
+                                    <img class="tour__img" src="img/tour__img.png" alt="">
+
+                                    <div class="tour__info">
+                                        <h4>Поездка на Мальдивы</h4>
+
+                                        <h3>250$</h3>
+                                    </div>
+
+                                    <p>Отпуск вашей мечты: Мальдивы в Лучших Традициях Роскоши</p>
+
+                                    <a href="#">
+                                        <button>Подробно</button>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="tour__block">
+                                    <img class="tour__img" src="img/tour__img.png" alt="">
+
+                                    <div class="tour__info">
+                                        <h4>Поездка на Мальдивы</h4>
+
+                                        <h3>250$</h3>
+                                    </div>
+
+                                    <p>Отпуск вашей мечты: Мальдивы в Лучших Традициях Роскоши</p>
+
+                                    <a href="#">
+                                        <button>Подробно</button>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="tour__block">
+                                    <img class="tour__img" src="img/tour__img.png" alt="">
+
+                                    <div class="tour__info">
+                                        <h4>Поездка на Мальдивы</h4>
+
+                                        <h3>250$</h3>
+                                    </div>
+
+                                    <p>Отпуск вашей мечты: Мальдивы в Лучших Традициях Роскоши</p>
+
+                                    <a href="#">
+                                        <button>Подробно</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                    <a class="tour__btn" href="tours.html">
+                        <button>Показать все</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- TOURS END -->
+
+        <!-- VACATION STATRS -->
+        <section class="vacation">
+            <div class="container">
+                <div class="vacation__content">
+                    <div class="vacation__box">
+                        <img class="vacation__img" src="img/vacation__img.png" alt="">
+                    </div>
+
+                    <div class="vacation__info">
+                        <h5>
+                            о нас
+                        </h5>
+
+                        <h2>
+                            Ваших Незабываемых Отпусков.
+                        </h2>
+
+                        <p>
+                            Наша миссия - открыть вам все красоты и удовольствия путешествий, предоставляя элитные и
+                            индивидуальные турпакеты. Наш опыт и профессионализм сделают ваш отдых удивительным,
+                            предоставляя турпакеты для тех, кто ищет комфорт и эксклюзивность
+                        </p>
+
+                        <a href="#">
+                            <button>Подробно</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- VACATION END  -->
+
+        <!-- SERVICES STARTS -->
+        <section class="services">
+            <div class="container">
+                <h5>КАТЕГОРИЯ</h5>
+
+                <h2>
+                    Мы предлагаем лучшие услуги
+                </h2>
+
+                <div class="services__content">
+
+                    <div class="services__block">
+                        <img class="services__img" src="img/srvices__img.png" alt="">
+
+                        <h4>
+                            Беззаботный Отдых
+                        </h4>
+
+                        <p>
+                            Доверьте нам все детали, и наслаждайтесь моментами - мы берем на себя всю организацию.
+                        </p>
+                    </div>
+
+                    <div class="services__block">
+                        <img class="services__img" src="img/srvices__img.png" alt="">
+
+                        <h4>
+                            Беззаботный Отдых
+                        </h4>
+
+                        <p>
+                            Доверьте нам все детали, и наслаждайтесь моментами - мы берем на себя всю организацию.
+                        </p>
+
+                        <img class="servises__bg" src="img/services__bg.png" alt="">
+                    </div>
+
+                    <div class="services__block">
+                        <img class="services__img" src="img/srvices__img.png" alt="">
+
+                        <h4>
+                            Беззаботный Отдых
+                        </h4>
+
+                        <p>
+                            Доверьте нам все детали, и наслаждайтесь моментами - мы берем на себя всю организацию.
+                        </p>
+                    </div>
+
+                    <div class="services__block">
+                        <img class="services__img" src="img/srvices__img.png" alt="">
+
+                        <h4>
+                            Беззаботный Отдых
+                        </h4>
+
+                        <p>
+                            Доверьте нам все детали, и наслаждайтесь моментами - мы берем на себя всю организацию.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- SERVICES END -->
+
+        <!-- ADVICE STATS -->
+        <section class="advice">
+            <div class="container">
+                <div class="advice__content">
+                    <h2>
+                        Готовы ли вы путешествовать?
+                    </h2>
+
+                    <p>
+                        Если вы не знаете, куда идти, свяжитесь с нами, используя кнопку ниже, и мы вас проконсультируем
+                    </p>
+
+                    <a href="#">
+                        <button>Получить совет</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- ADVICE END -->
+
+        <!-- BLOG STARTS -->
+        <section class="blog">
+            <div class="container">
+                <h5>Последние новости</h5>
+
+                <h2>
+                    Читайте последние блоги
+                </h2>
+
+                <div class="blog__content">
+                    <a href="tours.html">
+                        <div class="blog__block">
+                            <img class="blog__img" src="img/blog__img.png" alt="">
+    
+                            <div class="blog__info">
+                                <h3>
+                                    Путешествия лучше всего
+                                    измеряются новыми друзьями
+                                </h3>
+    
+                                <p>
+                                    Lorem ipsum dolor sit amet, consect adipiscing elit. Ut elit tellus, luctus nec
+                                    ullamcorper mattis pul leo.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="tours.html">
+                        <div class="blog__block">
+                            <img class="blog__img" src="img/blog__img.png" alt="">
+    
+                            <div class="blog__info">
+                                <h3>
+                                    Путешествия лучше всего
+                                    измеряются новыми друзьями
+                                </h3>
+    
+                                <p>
+                                    Lorem ipsum dolor sit amet, consect adipiscing elit. Ut elit tellus, luctus nec
+                                    ullamcorper mattis pul leo.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="tours.html">
+                        <div class="blog__block">
+                            <img class="blog__img" src="img/blog__img.png" alt="">
+    
+                            <div class="blog__info">
+                                <h3>
+                                    Путешествия лучше всего
+                                    измеряются новыми друзьями
+                                </h3>
+    
+                                <p>
+                                    Lorem ipsum dolor sit amet, consect adipiscing elit. Ut elit tellus, luctus nec
+                                    ullamcorper mattis pul leo.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- BLOG END -->
+
+
+        <!-- REVIEWS STARTS -->
+        <section class="reviews">
+            <div class="container">
+                <div class="reviews__content">
+                    <div class="reviews__info">
+                        <h4>
+                            Отзывы
+                        </h4>
+
+                        <h2>
+                            Что говорят люди о нас.
+                        </h2>
+                    </div>
+
+                    <!-- Swiper -->
+                    <div class="swiper reviewsSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="reviews__block">
+                                    <p>
+                                        Благодаря 'Путеводителю' мы пережили невероятные моменты в нашем последнем
+                                        отпуске. Отличная
+                                        организация, внимательный персонал, идеально спланированный маршрут. Обязательно
+                                        обратимся
+                                        снова
+                                    </p>
+
+                                    <h3>
+                                        Mike taylor
+                                    </h3>
+
+                                    <h4>
+                                        Lahore, Pakistan
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="reviews__block">
+                                    <p>
+                                        Благодаря 'Путеводителю' мы пережили невероятные моменты в нашем последнем
+                                        отпуске. Отличная
+                                        организация, внимательный персонал, идеально спланированный маршрут. Обязательно
+                                        обратимся
+                                        снова
+                                    </p>
+
+                                    <h3>
+                                        Mike taylor
+                                    </h3>
+
+                                    <h4>
+                                        Lahore, Pakistan
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="reviews__block">
+                                    <p>
+                                        Благодаря 'Путеводителю' мы пережили невероятные моменты в нашем последнем
+                                        отпуске. Отличная
+                                        организация, внимательный персонал, идеально спланированный маршрут. Обязательно
+                                        обратимся
+                                        снова
+                                    </p>
+
+                                    <h3>
+                                        Mike taylor
+                                    </h3>
+
+                                    <h4>
+                                        Lahore, Pakistan
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="reviews__block">
+                                    <p>
+                                        Благодаря 'Путеводителю' мы пережили невероятные моменты в нашем последнем
+                                        отпуске. Отличная
+                                        организация, внимательный персонал, идеально спланированный маршрут. Обязательно
+                                        обратимся
+                                        снова
+                                    </p>
+
+                                    <h3>
+                                        Mike taylor
+                                    </h3>
+
+                                    <h4>
+                                        Lahore, Pakistan
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="reviews__block">
+                                    <p>
+                                        Благодаря 'Путеводителю' мы пережили невероятные моменты в нашем последнем
+                                        отпуске. Отличная
+                                        организация, внимательный персонал, идеально спланированный маршрут. Обязательно
+                                        обратимся
+                                        снова
+                                    </p>
+
+                                    <h3>
+                                        Mike taylor
+                                    </h3>
+
+                                    <h4>
+                                        Lahore, Pakistan
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- REVIEWS END-->
+    </main>
+    <!-- MAIN END -->
+
+    <!-- FOOTER STARTS -->
+    <footer>
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__info">
+                    <a href="index.html"><img class="footer__logo" src="img/footer__logo.png" alt=""></a>
+
+                    <div class="footer__info-icons">
+                        <a href="#">
+                            <i class="fa-brands fa-telegram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__link">
+
+                    <h3>
+                        Быстрые ссылки
+                    </h3>
+
+                    <ul class="footer__list">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="tours.html">Туры</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__contact">
+                    <h3>Связаться</h3>
+
+                    <a href="#">
+                        <li><i class="fa-solid fa-phone"></i> +998(90)-108-40-40</li>
+                    </a>
+
+                    <a href="#">
+                        <li><i class="fa-solid fa-envelope"></i> mastertours@gmail.com</li>
+                    </a>
+
+                    <a href="#">
+                        <li><i class="fa-solid fa-location-dot"></i> 10043, Тошкент шахри, Чилонзор тумани, Бунёдкор
+                            кучаси, № 1.</li>
+                    </a>
+                </div>
+
+                <div class="footer__review">
+                    <form>
+                        <h3>
+                            Если вам нравится наше
+                            услуги оставьте отзыв
+                        </h3>
+
+                        <input type="text" placeholder="Ф.И.О" required>
+                        <input type="text" placeholder="Номер телефона" required>
+                        <input type="text" placeholder="Сообшения">
+
+                        <a href="#">
+                            <button>Отправить</button>
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+
+
+
+    <!-- MAIN CUSTOM JS -->
+    <script src="js/main.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swiper/swiper.js"></script>
+
+    <!-- FONT AWESOME -->
+    <script src="libs/FontAwesome.js"></script>
+
+
+</body>
+
+</html>
